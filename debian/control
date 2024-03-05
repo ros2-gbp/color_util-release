@@ -1,0 +1,12 @@
+Source: ros-rolling-color-util
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, ament-cmake-googletest <!nocheck>, libstd-msgs-dev, python3-std-msgs, ros-std-msgs, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-color-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libstd-msgs-dev, python3-std-msgs, ros-std-msgs, ros-rolling-ros-workspace
+Description: An almost dependency-less library for converting between color spaces
