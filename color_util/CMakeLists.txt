@@ -24,8 +24,8 @@ target_include_directories(color_util PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
 )
-target_link_libraries(color_util PUBLIC
-  ${std_msgs_TARGETS}
+ament_target_dependencies(color_util
+  std_msgs
 )
 
 if(BUILD_TESTING)
@@ -35,10 +35,10 @@ if(BUILD_TESTING)
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
   )
-  target_link_libraries(${PROJECT_NAME}_utest
-    color_util
-    ${std_msgs_TARGETS}
+  ament_target_dependencies(${PROJECT_NAME}_utest
+    std_msgs
   )
+  target_link_libraries(${PROJECT_NAME}_utest color_util)
 
   find_package(ament_cmake_pytest REQUIRED)
   ament_add_pytest_test(utest test/utest.py)
