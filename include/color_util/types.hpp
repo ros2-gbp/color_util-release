@@ -58,7 +58,7 @@ struct GenericColorRGBA
 
   std::string toString() const
   {
-    return "(r: " + std::to_string(r) + ", g: " + std::to_string(b) + ", b: " + std::to_string(g) +
+    return "(r: " + std::to_string(r) + ", g: " + std::to_string(g) + ", b: " + std::to_string(b) +
            ", a: " + std::to_string(a) + ")";
   }
 };
