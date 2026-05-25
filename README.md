@@ -1,3 +1,26 @@
+## color_util (humble) - 1.0.2-1
+
+The packages in the `color_util` repository were released into the `humble` distro by running `/usr/local/bin/bloom-release -r humble color_util -e` on `Mon, 25 May 2026 20:31:39 -0000`
+
+The `color_util` package was released.
+
+Version of package(s) in repository `color_util`:
+
+- upstream repository: https://github.com/MetroRobots/color_util.git
+- release repository: https://github.com/ros2-gbp/color_util-release.git
+- rosdistro version: `1.0.0-1`
+- old version: `1.0.0-1`
+- new version: `1.0.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## color_util (lyrical) - 1.2.0-1
 
 The packages in the `color_util` repository were released into the `lyrical` distro by running `/usr/local/bin/bloom-release -r lyrical color_util` on `Mon, 25 May 2026 20:24:34 -0000`
